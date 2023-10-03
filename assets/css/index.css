@@ -1,0 +1,237 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+}
+
+::selection {
+    background-color: transparent;
+    outline: none;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+.box-effect {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(7deg);
+    width: 410px;
+    height: 344px;
+    background: rgba(58, 74, 175, 0.44);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transform: translate(-50%, -50%) rotate(7deg);
+    -moz-transform: translate(-50%, -50%) rotate(7deg);
+    -ms-transform: translate(-50%, -50%) rotate(7deg);
+    -o-transform: translate(-50%, -50%) rotate(7deg);
+    z-index: 1;
+}
+
+.main-app {
+    position: absolute;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 52%;
+    width: 446px;
+    height: 366px;
+    border-radius: 24px;
+    background: #4641da;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transition: 0.3s;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+}
+
+.main-app-title {
+    cursor: default;
+    text-align: center;
+    color: #ffffff;
+    font-family: Chiller;
+    font-size: 64px;
+    margin: 15px auto;
+    animation: title-animate 3s linear 1;
+    -webkit-animation: title-animate 3s linear 1;
+}
+
+@keyframes title-animate {
+    0% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+    }
+    50% {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+
+.main-app-login-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-app-login-form input:nth-child(1),
+.main-app-login-form input:nth-child(2) {
+    margin-bottom: 15px;
+}
+
+.main-app-login-form input {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 360px;
+    outline: none;
+    user-select: none;
+    z-index: 3;
+    padding: 15px;
+    border: 0px solid transparent;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.main-app-login-form-state {
+    width: 360px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+}
+
+.main-app-login-form-state a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 16px;
+}
+
+.main-app-login-form-button {
+    width: 130px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 27px;
+    padding: 15px;
+    box-shadow: 0px 5px 0px #e1e1e1;
+    color: #4641da;
+    background-color: #ffffff;
+    border: 0px solid #ffffff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.main-app-login-form-button:active {
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    box-shadow: 0px 0px 0px transparent;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+}
+
+.main-app-effect-circle {
+    z-index: -1;
+    position: absolute;
+    z-index: 2;
+    transform: translate(100%, 50%);
+    left: 50%;
+    top: 52%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: rgba(57, 54, 169, 0.39);
+    -webkit-transform: translate(100%, 50%);
+    -moz-transform: translate(100%, 50%);
+    -ms-transform: translate(100%, 50%);
+    -o-transform: translate(100%, 50%);
+    transition: 0.3s;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    animation: animate 10s linear 1;
+    -webkit-animation: animate 10s alternate-reverse infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-100%, -100%);
+        -webkit-transform: translate(-100%, -100%);
+        -moz-transform: translate(-100%, -100%);
+        -ms-transform: translate(-100%, -100%);
+        -o-transform: translate(-100%, -100%);
+    }
+    45% {
+        transform: translate(50%, -100%);
+        -webkit-transform: translate(50%, -100%);
+        -moz-transform: translate(50%, -100%);
+        -ms-transform: translate(50%, -100%);
+        -o-transform: translate(50%, -100%);
+    }
+    75% {
+        transform: translate(100%, 50%);
+        -webkit-transform: translate(100%, 50%);
+        -moz-transform: translate(100%, 50%);
+        -ms-transform: translate(100%, 50%);
+        -o-transform: translate(100%, 50%);
+    }
+    100% {
+        transform: translate(-100%, -100%);
+        -webkit-transform: translate(-100%, -100%);
+        -moz-transform: translate(-100%, -100%);
+        -ms-transform: translate(-100%, -100%);
+        -o-transform: translate(-100%, -100%);
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .main-app {
+        transition: 0.3s ease-out;
+        top: 54%;
+        -webkit-transition: 0.3s ease-out;
+        -moz-transition: 0.3s ease-out;
+        -ms-transition: 0.3s ease-out;
+        -o-transition: 0.3s ease-out;
+    }
+}
